@@ -1,0 +1,23 @@
+{
+  "name": "nginx-config",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build.js",
+  "dependencies": {
+    "handlebars": "^4.0.6",
+    "lodash": "^4.17.4",
+    "recursive-readdir": "^2.1.1",
+    "shelljs": "^0.7.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/isgit/nginx-config.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/isgit/nginx-config#readme"
+}

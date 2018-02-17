@@ -1,0 +1,6 @@
+{
+  "application_servers": {
+    "left": "10.100.100.1",
+    "right": "10.100.100.2"
+  }
+}
