@@ -1,6 +1,6 @@
 # nginx-template-based-config
 
-This is the source code for a [blog post]() I wrote.
+This is the source code for a [blog post](https://www.arnovw.com/blog/2018/02/16/sensible-nginx-config-management/) I wrote.
 
 
 ### src
