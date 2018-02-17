@@ -29,10 +29,12 @@ _.forEach(configs, function (config) {
         _.forEach(templates, function (templateFile) {
 
             // compile template file to target/env folder
-            var outputPath = templateFile.replace(paths.src, path.join(paths.target, config.env));
+            var outputFolder = path.join(paths.target, config.env);
+            var outputPath = templateFile.replace(paths.src, outputFolder);
             outputPath = outputPath.replace('.tpl.conf', '.conf');
 
-            var template = handlebars.compile(fs.readFileSync(templateFile, 'utf8'));
+            var templateFileContent = fs.readFileSync(templateFile, 'utf8');
+            var template = handlebars.compile(templateFileContent);
             var output = template(config);
             shell.mkdir('-p', path.dirname(outputPath));
             fs.writeFileSync(outputPath, output);
